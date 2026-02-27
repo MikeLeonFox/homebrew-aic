@@ -1,8 +1,8 @@
 class Aic < Formula
   desc "Manage multiple AI providers (Claude API, LiteLLM, Claude.ai) for Claude Code"
   homepage "https://github.com/MikeLeonFox/aic"
-  url "https://github.com/MikeLeonFox/aic/archive/refs/tags/v1.0.4.tar.gz"
-  sha256 "cb451db0fc419eb93890d75fb735aa7a530d3d2dc3f91b49717cbc712f6ac3ab"
+  url "https://github.com/MikeLeonFox/aic/archive/refs/tags/v1.0.5.tar.gz"
+  sha256 "30b6d1c47caacb58369dac874aa0435adc58748590b9697c19cde91879528bb5"
   license "MIT"
 
   depends_on "node"
@@ -19,6 +19,6 @@ class Aic < Formula
   end
 
   test do
-    assert_match "1.0.4", shell_output("#{bin}/aic --version")
+    assert_match "1.0.5", shell_output("#{bin}/aic --version")
   end
 end
